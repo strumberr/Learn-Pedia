@@ -1,0 +1,35 @@
+<link rel="stylesheet" type="text/css" href="{{url_for('static', filename='stylescode.css')}}" />
+<link rel="shortcut icon" href="{{ url_for('static', filename='learnpediafaviconp.png') }}">
+<body>
+<style>
+    body {
+    background: rgb(29, 29, 29);
+    }
+</style>
+
+
+    <div class="header">
+        <h1>LearnPedia</h1>
+    </div>
+
+
+    <div class="learnpediaimage">
+        <img src="{{url_for('static', filename='learnpedialogopride.png')}}" width="250" height="256"/>
+    </div>
+
+
+    <div class="description">
+        <h3>Please input the password in the following field</h3>
+    </div>
+
+    <form class="something" action="/" method="POST">
+        <input style="border: 1.5px solid white; background-color: transparent; font-family: 'Montserrat Alternates', sans-serif; font-weight: 400; height: 80px; " size="100%" class="boxed" type="password" id="ctext" name="ctext" placeholder="password" required/>
+        
+        <button style="font-family: 'Montserrat Alternates', sans-serif; font-weight: 600;" class="submitbutton" type="submit" value="Submit">Submit</button>
+    </form>   
+
+</body>
+</html>
+
+
+

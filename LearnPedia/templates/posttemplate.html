@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<link rel="stylesheet" type="text/css" href="{{url_for('static', filename='stylescollege.css')}}" />
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+<html>
+<body>
+
+
+
+<style>
+body {
+    background: rgb(29, 29, 29);
+}
+
+.head1 {
+    font-family: Arial;
+    color: white;
+    font-size: 60px; 
+    font-weight: 400;
+}
+
+.allpage {
+    justify-content: space-evenly;
+    vertical-align: middle;
+    text-align: left;
+}
+
+.allpage2 {
+    justify-content: space-evenly;
+    vertical-align: middle;
+    text-align: left;
+}
+
+.boxdesign {
+    border-radius: 12pt;
+    padding: 20px;
+    margin: 20px;
+    color: white;
+    font-family: Arial;
+    height: auto;
+    width: auto;
+    background-color: #3d3d3d;
+    flex-wrap: wrap;
+}
+
+.boxtitle {
+    font-size: 30px;
+    font-weight: 400;
+    flex-wrap: wrap;
+}
+
+.boxtext {
+    font-size: 18px;
+    font-weight: 200;
+    flex-wrap: wrap;
+}
+
+.boxtext2 {
+    font-size: 18px;
+    font-weight: 200;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.editdeletebutton {
+    align-items: center;
+    margin-top: 20px;
+    margin-right: 20px;
+    
+}
+
+
+.editbutton {
+    padding: 5px;
+    border-radius: 12px;
+    background-color: rgb(0, 122, 255);
+    border-color: rgb(0, 122, 255);
+    cursor: pointer;
+    color: white;
+    padding: 20px;
+    height: auto;
+    width: 120px;
+
+}
+
+.deletebutton {
+    padding: 5px;
+    border-radius: 12px;
+    background-color: rgb(255, 59, 48);
+    border-color: rgb(255, 59, 48);
+    cursor: pointer;
+    color: white;
+    padding: 20px;
+    height: auto;
+    width: 120px;
+}
+
+.keywordboxdesign {
+    border-radius: 12pt;
+    padding: 20px;
+    margin: 20px;
+    color: white;
+    font-family: Arial;
+    height: auto;
+    width: 400px;
+    background-color: #3d3d3d;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+
+.sliderboxdesign {
+    border-radius: 12pt;
+    padding: 20px;
+    margin: 20px;
+    color: white;
+    font-family: Arial;
+    height: auto;
+    width: 70%;
+    background-color: #3d3d3d;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    
+}
+
+.keywordslider {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: row;
+
+
+}
+
+
+.header {
+    flex-direction: row;
+    display: flex;
+    align-items: center;
+}
+
+.sliderdata {
+    font-family: Arial;
+    font-size: 30px;
+    font-weight: 600;
+    margin-top: 10px;
+    margin-bottom: 40px;
+    color: rgb(48, 209, 88);
+}
+
+.hoursstyle {
+    font-size: 50px;
+    font-weight: 550;
+    color: rgb(255, 69, 59);
+    text-align: center;
+    margin-top: 30px;
+}
+
+
+
+.boxtext3 {
+    font-size: 18px;
+    font-weight: 200;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.authordata {
+    font-family: Arial;
+    font-size: 30px;
+    font-weight: 600;
+    margin-top: 10px;
+    margin-bottom: 40px;
+    color: rgb(0, 140, 255);
+}
+
+.likebutton {
+    background-color: rgb(48, 209, 88);
+    padding: 5px;
+    border-radius: 12px;
+    border-color: rgb(48, 209, 88);
+    cursor: pointer;
+    color: white;
+    padding: 20px;
+    height: auto;
+    width: 120px;
+}
+
+.dislikebutton {
+    background-color: rgb(255, 159, 10);
+    padding: 5px;
+    border-radius: 12px;
+    border-color: rgb(255, 159, 10);
+    cursor: pointer;
+    color: white;
+    padding: 20px;
+    height: auto;
+    width: 120px;
+}
+
+
+.hometitle {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.headcomments {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    font-family: Arial;
+    color: white;
+    font-size: 60px; 
+    font-weight: 400;
+    margin-left: 20px;
+}
+
+.commentbox {
+    border-radius: 12pt;
+    padding: 20px;
+    margin: 20px;
+    color: white;
+    font-family: Arial;
+    height: auto;
+    width: auto;
+    background-color: #3d3d3d;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    
+}
+
+.indcomment {
+    border-radius: 6pt;
+    padding: 20px;
+    margin: 5px;
+    color: white;
+    font-family: Arial;
+    height: auto;
+    width: auto;
+    background-color: #666666;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+
+.inputcommenttitle {
+    background-color: #666666; 
+    border: 2px solid #666666; 
+    color: white; 
+    border-radius: 4px; 
+    height: 30px; 
+    width: 200px;
+    font-size: 20px;
+}
+
+.inputcommenttitle:focus {
+  outline: none;
+}
+
+.inputcommenttitle::placeholder {
+    color: #afafaf;
+    opacity: 1; /* Firefox */
+}
+
+.inputcommenttitle:-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: rgb(255, 196, 193);
+}
+
+.inputcommenttitle::-ms-input-placeholder { /* Microsoft Edge */
+    color: rgb(255, 196, 193);
+}
+
+
+
+
+</style>
+
+<title>Post - {{title}}</title>
+
+<link rel="shortcut icon" href="{{ url_for('static', filename='learnpediafaviconp.png') }}">
+
+
+    <div class="header">
+        <a href="/home">
+            <img src="{{url_for('static', filename='homeicon3.png')}}" width="50" height="55" style="margin-left: 20px;"/>
+        </a>
+        <div style="color: white; font-size: 50px;">
+            |
+        </div>
+        
+        <div class="head1">
+            {{title}}
+        </div>
+        <div class="editdeletebutton">
+
+        <a href="{{editurl}}">
+            <button class="editbutton" id="likebutton" name="likebutton" value="likebutton" type="submit">
+                <span class="material-symbols-outlined">
+                    edit
+                </span>
+            </button>
+        </a>
+
+
+        <button class="likebutton" id="likebutton" name="likebutton" value="likebutton" type="submit">
+            <span class="material-symbols-outlined">
+            thumb_up
+            </span>4
+        </button>
+
+
+        <button class="dislikebutton" name="dislikebutton" value="dislikebutton">
+            <span class="material-symbols-outlined">
+            thumb_down
+            </span>3
+        </button>
+
+
+
+        <a href="/page_remove">
+            <button class="deletebutton">
+                <span class="material-symbols-outlined">
+                delete
+                </span>
+            </button>
+        </a>
+    </div>
+</div>
+
+
+
+
+<div class="allpage">
+    <div class="boxdesign">
+        {% autoescape false %}
+            <div class="boxtext">
+                {{wholetext}}
+            </div>
+        {% endautoescape %}
+    </div>
+
+
+    <div class="keywordslider">
+        <div class="keywordboxdesign">
+            <div class="boxtitle">
+                Keywords
+                    <div class="boxtext2">
+                        {% autoescape false %}
+                            <div>
+                                {{keywords}}
+                            </div>
+                        {% endautoescape %}
+                    </div>
+            </div>
+        </div>
+
+
+        <div class="sliderboxdesign">
+            <div class="boxtitle">
+                Author Details
+                <div class="boxtext2">
+                    Author Name:
+                    <div class="authordata">
+                        {{authorname}}
+                    </div>
+                    Author Contact
+                    <div class="authordata">
+                        {{authorcontact}}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<div class="allpage2">
+    <div class="keywordslider">
+        <div class="sliderboxdesign">
+            <div class="boxtitle">
+                Links
+                {% autoescape false %}
+                    <div class="boxtext3">
+                        {{links}}
+                    </div>
+                {% endautoescape %}
+            </div>
+        </div>
+
+
+        <div class="keywordboxdesign">
+            <div class="boxtitle">
+                Time spent on this project
+                <div class="boxtext2">
+                    <div class="hoursstyle">
+                        {{hours}} Hours
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+</div>
+
+<div class="keywordslider">
+
+
+    <div class="keywordboxdesign">
+            <div class="boxtitle">
+                Auto generated keywords
+                <div class="boxtext2">
+                    <div>
+                        Coming Soon...
+                    </div>
+                </div>
+            </div>
+    </div>
+        
+
+
+    <div class="sliderboxdesign">
+        <div class="boxtitle">
+            Review
+            <div class="boxtext2">
+                On a scale of how hard it was to make this, the person that wrote it found it
+                <div class="sliderdata">
+                    {{sliderhard}}
+                </div>
+                On a scale of how much the person enjoyed making this, they wrote they found it
+                <div class="sliderdata">
+                    {{sliderenjoy}}
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+    
+
+
+    
+<form action="{{url}}" method="POST">
+    <div class="allpage">
+        <div class="headcomments">
+            comments
+        </div>
+        <div class="commentbox">
+            <div class="indcomment">
+                <div style="margin-bottom: 10px; font-size: 25px;">Write your own comment!</div>
+                <div style="color: white; font-size: 20px; font-weight: 600;">
+                    <input type="text" id="commentusername" name="commentusername" placeholder="Username/name here" class="inputcommenttitle" style="font-size: 23px; width: 100%;" required>
+                </div>
+                <div style="color: white; font-size: 20px; margin-top: 5px;">
+                    <input type="text" id="commenttext" name="commenttext" placeholder="Your desired comment" class="inputcommenttitle" style="width: 100%;" required>
+                </div>
+                <button type="submit" style="margin-top: 10px; border: 2px solid #ffffff; border-radius: 5px; color: #3d3d3d; width: auto; height: 50px; text-align: center; padding: 10px; padding-right: 20px; padding-left: 20px; cursor: pointer;">Post comment</button>
+            </div>
+
+            {%for (el,el2) in zip(allcommenttext_list,allauthorcomment_list)%}
+                <div class="indcomment" style="margin-top: 20px;">
+                    <div style="color: white; font-size: 20px; font-weight: 600;">
+                        {{el2}} commented:
+                    </div>
+                    <div style="color: white; font-size: 20px; margin-top: 5px;">
+                        {{el}}
+                    </div>
+                </div>
+            {% endfor %}
+        </div>
+    </div>
+</form>
+
+    
+
+
+
+
+
+
+
+
+
+</body>
+</html>

@@ -1,0 +1,121 @@
+
+.boxed {
+    border: 2px solid white;
+    background-color: white;
+    border-radius: 6pt;
+    font-size: 20px; 
+    padding: 10px; 
+    margin: 10px;
+
+  }
+
+h1 {
+    font-size: 60px; 
+    font-family: Arial;
+    color: white;
+    justify-content: center;
+    text-align: center;
+    margin: 50px;
+    padding-top: 20px;
+}
+
+.description {
+    font-size: 20px;
+    font-family: Arial;
+    color: white;
+    justify-content: center;
+    text-align: center;
+    margin: 50px;
+}
+
+.learnpediaimage {
+  text-align: center;
+  
+}
+
+input {
+  color: white;
+}
+
+
+
+::placeholder {
+    color: gray;
+    opacity: 1; /* Firefox */
+  }
+  
+  :-ms-input-placeholder { /* Internet Explorer 10-11 */
+   color: gray;
+  }
+  
+  ::-ms-input-placeholder { /* Microsoft Edge */
+   color: gray;
+  }
+
+
+
+
+
+
+
+
+.wrapper{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  .submitbutton {
+    display: block;
+    width: 200px;
+    height: 80px;
+    line-height: 40px;
+    font-size: 18px;
+    font-family: 'Montserrat Alternates', sans-serif;
+    text-decoration: none;
+    color: black;
+    border: 1.5px solid black;
+    letter-spacing: 2px;
+    text-align: center;
+    position: relative;
+    transition: all .35s;
+    padding: 0dpx 2px;
+    border-radius: 8px;
+    background-color: white;
+    
+  }
+  
+  .submitbutton {
+    position: relative;
+    z-index: 2;
+  }
+  
+  .submitbutton:after{
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: black;
+    transition: all .35s;
+    border-radius: 6px;
+  }
+  
+  .submitbutton:hover{
+    cursor: pointer;
+  }
+  
+  .submitbutton:hover:after{
+    width: 100%;
+    border-radius: 6px;
+  }
+
+
+.something {
+    display: flex; /* or inline-flex */
+    align-items: center;
+    justify-content: center;
+  }
+

@@ -1,0 +1,219 @@
+h1 {
+    justify-content: center;
+    display: flex;
+    font-family: Arial;
+    color: white;
+    font-size: 40px; 
+    text-align: center;
+}
+
+h2 {
+    justify-content: center;
+    display: flex;
+    font-family: Arial;
+    color: white;
+    font-size: 25px; 
+    text-align: center;
+    font-weight: 300;
+}
+
+.boxdesign {
+    border-radius: 12pt;
+    font-size: 20px; 
+    padding: 20px; 
+    margin: 20px;
+    color: white;
+    font-family: Arial;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+    text-align: center;
+    height: auto;
+    width: 220px;
+    background-color: #3d3d3d;
+    vertical-align: top;
+}
+
+.collegetitle {
+    font-size: 30px; 
+    font-weight: 500;
+}
+
+.viewbutton {
+    color: white;
+    background-color: rgb(0, 140, 255);
+    font-size: 20px; 
+    border-radius: 6pt;
+    height: 70px;
+    width: 100%;
+    vertical-align: middle;
+    border-color: transparent;
+    cursor: pointer;
+    align-items: flex-end;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+}
+
+.viewbutton:hover{
+    background-color:rgb(102, 186, 255);
+}
+
+.addbuttongen{
+    border-radius: 12pt;
+    font-size: 20px; 
+    padding: 20px; 
+    margin: 20px;
+    color: white;
+    font-family: Arial;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+    text-align: center;
+    height: 250px;
+    width: 220px;
+    background-color: #3d3d3d;
+
+}
+
+.addbutton {
+    color: white;
+    background-color: #3d3d3d;
+    font-size: 20px; 
+    border-radius: 6pt;
+    height: 100%;
+    width: 100%;
+    vertical-align: middle;
+    border-color: transparent;
+    cursor: pointer;
+}
+
+
+.generallayout {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+body {
+    background: rgb(29, 29, 29);
+    }
+
+.refreshsite {
+    display: flex;
+    flex-direction: row;
+    align-content: flex-end;
+    justify-content: center;
+    font-size: 20px;
+    font-family: Arial;
+    vertical-align: bottom;
+    
+}
+
+.refreshbox {
+    text-align: center;
+}
+
+.addbuttongen2 {
+    border-radius: 12pt;
+    font-size: 20px; 
+    padding: 20px; 
+    margin: 20px;
+    color: white;
+    font-family: Arial;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+    text-align: center;
+    height: 250px;
+    width: 220px;
+    background-color: #3d3d3d;
+
+}
+
+
+.addbutton:hover {
+    transition-duration: 600ms;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+
+.invertbutton {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: #3d3d3d;
+    padding: 20px;
+    border-radius: 100px;
+    margin-top: 20px;
+}
+
+.invertbuttongen {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.text-rainbow-animation {
+    background-image: linear-gradient(to right, red,orange,yellow,green,rgb(65, 65, 255),indigo,violet, red); 
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;  
+    animation: rainbow-animation 250s linear infinite;
+  }
+  
+  @keyframes rainbow-animation {
+      to {
+          background-position: 4500vh;
+      }
+  }
+
+
+
+
+
+ 
+
+.viewbutton:before{
+  animation: shine 6s infinite;
+
+  background: linear-gradient(transparent 0%,
+    rgba(255, 255, 255, 0.1) 45%,
+    rgba(255, 255, 255, 0.5) 50%,
+    rgba(255, 255, 255, 0.1) 55%,
+    transparent 100%);
+
+  /*transition: all 2s;*/
+  content: "";
+  height: 200%;
+  left:-140%;
+  position: absolute;
+  top:-140%;
+  transform: rotate(-45deg);
+  width: 200%;
+  z-index: 10;
+}
+
+@keyframes shine{
+  100% {top:-150%;left:-150%;}
+  80% {top:-120%;left:-120%;}
+  0%, 20%, 40% {left:100%;top:100%;}
+}
+
+
+
+
+
+
+.ribbon-1 {
+    position: fixed;
+    background: rgb(0, 140, 255);
+    box-shadow: 0 0 0 999px rgb(0, 140, 255);
+    clip-path: inset(0 -100%);
+    color: white;
+    padding: 10px;
+    font-size: 20px;
+    font-family: Arial;
+  }
+
+  .right {
+    inset: 0 0 auto auto;
+    transform-origin: 0 0;
+    transform: translate(29.3%) rotate(45deg);
+  }

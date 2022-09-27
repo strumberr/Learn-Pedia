@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<link rel="stylesheet" type="text/css" href="{{url_for('static', filename='styleshome.css')}}" />
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+<link rel="shortcut icon" href="{{ url_for('static', filename='learnpediafaviconp.png') }}">
+
+<title>LearnPedia</title>
+<html>
+<body>
+
+
+</br>
+</br>
+
+
+<h1>Welcome to the LearnPedia!</h1>
+<h2>Where learners can access and create pages for future learners to see.</h2>
+<div class="ribbon-1 right">Swear Word Filter Added!</div>
+    
+
+</br>
+</br>
+</br>
+
+<div class="generallayout">
+
+    <div class="addbuttongen2">
+        <a href="/pagecreate">
+            <button class="addbutton">
+                <div>
+                    <img class="imageadd" src="{{url_for('static', filename='addicon2.png')}}" height="100px" width="100px">
+                </div>
+            </button>
+        </a>
+    </div>
+
+
+
+    {%for (el,el2,el3) in zip(reversed(list1),reversed(list2),reversed(list3))%}
+        <div class="boxdesign">
+            <p class="collegetitle" style="overflow: hidden;
+            text-overflow: ellipsis;">
+                {{el}}
+                <div style="overflow: hidden;
+                display: -webkit-box;
+                -webkit-line-clamp: 2;
+                -webkit-box-orient: vertical;">
+                    {{el2}}
+                </div>
+            <p>
+            <a href="{{el3}}">
+                <button name="collegebutton" value="collegebutton" class="viewbutton">
+                    <span class="material-symbols-outlined">
+                        visibility
+                    </span>
+                </button>
+            </a>
+        </div>
+    {%endfor%}
+
+
+
+
+</div>
+
+<div class="refreshsite" style="margin-top: 40px;">
+    <div class="refreshbox" style="background-color: #3d3d3d; padding: 30px; color: white; border-radius: 12pt;">
+        <div>
+            Auto Refresh in  
+            <div id="countdowntimer" style="color: white; font-weight: 600; font-size: 60px;" >60
+            </div>
+            <div style="color: white; font-size: 15px;">
+                seconds
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+
+
+
+
+
+<script>  
+    function timedRefresh(timeoutPeriod) {
+        setTimeout("location.reload(true);",timeoutPeriod);
+    }    
+    window.onload = timedRefresh(60000);
+</script>
+
+
+<script type="text/javascript">
+    var timeleft = 60;
+    var downloadTimer = setInterval(function(){
+    timeleft--;
+    document.getElementById("countdowntimer").textContent = timeleft;
+    if(timeleft <= 0)
+        clearInterval(downloadTimer);
+    },1000);
+</script> 
+
+
+
+</body>
+</html>

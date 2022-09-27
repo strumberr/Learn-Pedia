@@ -1,0 +1,50 @@
+.boxdesign {
+    border-radius: 12pt;
+    font-size: 20px; 
+    padding: 20px; 
+    margin: 20px;
+    color: white;
+    font-family: Arial;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+    text-align: center;
+    height: auto;
+    width: 500px;
+    background-color: #3d3d3d;
+}
+
+
+.collegetitle {
+    font-size: 30px; 
+    font-weight: 500;
+}
+
+.viewbutton {
+    color: white;
+    background-color: rgb(0, 140, 255);
+    font-size: 20px; 
+    border-radius: 6pt;
+    height: 70px;
+    width: 100%;
+    border-color: transparent;
+    cursor: pointer;
+}
+
+.wholepage {
+
+    margin-left: 30%;
+    margin-right: 30%;
+}
+
+
+.text-rainbow-animation {
+    background-image: linear-gradient(to right, red,orange,yellow,green,rgb(115, 115, 255),indigo,violet, red); 
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;  
+    animation: rainbow-animation 600s linear infinite;
+  }
+  
+  @keyframes rainbow-animation {
+      to {
+          background-position: 4500vh;
+      }
+}

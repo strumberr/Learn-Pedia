@@ -1,0 +1,60 @@
+.boxdesign {
+    border-radius: 12pt;
+    font-size: 20px; 
+    padding: 20px; 
+    margin: 20px;
+    color: white;
+    font-family: Arial;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+    text-align: center;
+    height: auto;
+    width: 500px;
+    background-color: #3d3d3d;
+    flex-wrap: wrap;
+}
+
+
+.collegetitle {
+    font-size: 30px; 
+    font-weight: 500;
+}
+
+.viewbutton {
+    color: white;
+    background-color: rgb(255, 59, 48);
+    font-size: 20px; 
+    border-radius: 6px;
+    height: 70px;
+    width: 100%;
+    border-color: transparent;
+    cursor: pointer;
+    flex-wrap: wrap;
+}
+
+.wholepage {
+
+    margin-left: 30%;
+    margin-right: 30%;
+}
+
+.inputdelete {
+    margin: 10px;
+    margin-bottom: 30px;
+    border-color: white;
+    border-radius: 6px;
+    height: 40px;
+    width: 250px;
+    background-color: #3d3d3d;
+    color: white;
+    font-size: 15px;
+    padding-left: 10px;
+}
+
+.inputdelete:hover {
+    border-color: rgb(255, 59, 48);
+}
+
+
+.listbold {
+    font-weight: 550;
+}

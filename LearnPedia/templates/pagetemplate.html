@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<link rel="stylesheet" type="text/css" href="{{url_for('static', filename='stylescollege.css')}}" />
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+<link rel="shortcut icon" href="{{ url_for('static', filename='learnpediafaviconp.png') }}">
+
+<html>
+<body>
+
+
+
+<style>
+    body {
+        background: rgb(29, 29, 29);
+    }
+
+    .head1 {
+    font-family: Arial;
+    color: white;
+    font-size: 60px; 
+    margin: 20px;
+    font-weight: 400;
+
+    }
+
+    .allpage {
+        justify-content: space-evenly;
+        vertical-align: middle;
+        text-align: left;
+    }
+
+    .boxdesign {
+        border-radius: 12pt;
+        padding: 20px;
+        margin: 20px;
+        color: white;
+        font-family: Arial;
+        height: auto;
+        width: auto;
+        background-color: #3d3d3d;
+        flex-wrap: wrap;
+    }
+
+    .boxtitle {
+        font-size: 30px;
+        font-weight: 400;
+    }
+
+    .boxtext {
+        font-size: 18px;
+        font-weight: 200;
+        padding-top: 15px;
+    }
+
+    .editdeletebutton {
+        align-items: center;
+        margin-top: 20px;
+        margin-right: 20px;
+        
+    }
+
+
+    .editbutton {
+        padding: 5px;
+        border-radius: 12px;
+        background-color: rgb(0, 122, 255);
+        border-color: rgb(0, 122, 255);
+        cursor: pointer;
+        color: white;
+        padding: 20px;
+        height: auto;
+        width: 120px;
+
+    }
+
+    .deletebutton {
+        padding: 5px;
+        border-radius: 12px;
+        background-color: rgb(255, 59, 48);
+        border-color: rgb(255, 59, 48);
+        cursor: pointer;
+        color: white;
+        padding: 20px;
+        height: auto;
+        width: 120px;
+    }
+
+    .keywordboxdesign {
+        border-radius: 12pt;
+        padding: 20px;
+        margin: 20px;
+        color: white;
+        font-family: Arial;
+        height: auto;
+        width: 140px;
+        background-color: #3d3d3d;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+    }
+
+    .header {
+        flex-direction: row;
+        display: flex;
+        justify-content: space-between;
+    }
+</style>
+
+<div class="header">
+    <div class="head1">
+        College
+    </div>
+    <div class="editdeletebutton">
+        <button class="editbutton">
+            <span class="material-symbols-outlined">
+            edit
+            </span>
+        </button>
+        <button class="deletebutton">
+            <span class="material-symbols-outlined">
+            delete
+            </span>
+        </button>
+    </div>
+</div>
+
+
+
+
+<div class="allpage">
+    <div class="boxdesign">
+        <div class="boxtitle">
+            Requirements
+            <div class="boxtext">
+                Each school has an application fee (75 or 80$)
+                Each school has a certain amount of teacher evaluations required.
+                The mid-year report is a report that your councilor (aka mentor) has to write in the middle of your senior (12th) year.
+                Some schools require an SAT without an essay, and some require English proficiency tests. It seems that lots of schools have different exam requirements, so see each case for yourself.
+                The schools that require the SAT’s, have an average registration fee of 50$
+                Schools have different application dates but the final application date is typically sometime right after the new year.
+                Some schools also require portfolios, made with slide room.
+                The grand majority of schools on the common app require the common app essay, an essay that can be written about essentially anything you want, with a few prompts that are to be helpful to the applicant.
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="keywordboxdesign">
+        <div class="boxtitle">
+            Keywords
+            <div class="boxtext">
+                <ul>
+                    <li>Coffee</li>
+                    <li>Tea</li>
+                    <li>Milk</li>
+                  </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+</body>
+</html>

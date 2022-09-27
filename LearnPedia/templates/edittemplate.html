@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+    <link rel="stylesheet" type="text/css" href="{{url_for('static', filename='stylescollege.css')}}" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <html>
+    <body>
+
+
+
+    <style>
+        body {
+            background: rgb(29, 29, 29);
+        }
+
+        .head1 {
+            font-family: Arial;
+            color: white;
+            font-size: 60px; 
+            margin: 20px;
+            font-weight: 400;
+            background-color: rgb(29, 29, 29);
+            border: 2px solid rgb(29, 29, 29);
+            width: 800px;
+
+        }
+
+        .allpage {
+            justify-content: space-evenly;
+            vertical-align: middle;
+            text-align: left;
+        }
+
+        .allpage2 {
+            justify-content: space-evenly;
+            vertical-align: middle;
+            text-align: left;
+        }
+
+        .boxdesign {
+            border-radius: 12pt;
+            padding: 20px;
+            margin: 20px;
+            color: white;
+            font-family: Arial;
+            height: auto;
+            width: auto;
+            background-color: #3d3d3d;
+            flex-wrap: wrap;
+        }
+
+        .boxtitle {
+            font-size: 30px;
+            font-weight: 400;
+            flex-wrap: wrap;
+        }
+
+        .boxtext {
+            font-size: 18px;
+            font-weight: 200;
+            flex-wrap: wrap;
+        }
+
+        .boxtext2 {
+            font-size: 18px;
+            font-weight: 200;
+            flex-wrap: wrap;
+            margin-top: 20px;
+        }
+
+        .editdeletebutton {
+            align-items: center;
+            margin-top: 20px;
+            margin-right: 20px;
+            
+        }
+
+
+        .editbutton {
+            padding: 5px;
+            border-radius: 12px;
+            background-color: rgb(0, 122, 255);
+            border-color: rgb(0, 122, 255);
+            cursor: pointer;
+            color: white;
+            padding: 20px;
+            height: auto;
+            width: 120px;
+
+        }
+
+        .deletebutton {
+            padding: 5px;
+            border-radius: 12px;
+            background-color: rgb(255, 59, 48);
+            border-color: rgb(255, 59, 48);
+            cursor: pointer;
+            color: white;
+            padding: 20px;
+            height: auto;
+            width: 120px;
+        }
+
+        .keywordboxdesign {
+            border-radius: 12pt;
+            padding: 20px;
+            margin: 20px;
+            color: white;
+            font-family: Arial;
+            height: auto;
+            width: 400px;
+            background-color: #3d3d3d;
+            flex-wrap: wrap;
+            justify-content: flex-start;
+        }
+
+        .sliderboxdesign {
+            border-radius: 12pt;
+            padding: 20px;
+            margin: 20px;
+            color: white;
+            font-family: Arial;
+            height: auto;
+            width: 70%;
+            background-color: #3d3d3d;
+            flex-wrap: wrap;
+            justify-content: flex-start;
+        }
+
+        .keywordslider {
+            display: flex;
+            justify-content: flex-start;
+            flex-direction: row;
+
+        }
+
+
+        .header {
+            flex-direction: row;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .sliderdata {
+            font-family: Arial;
+            font-size: 30px;
+            font-weight: 600;
+            margin-top: 10px;
+            margin-bottom: 40px;
+            color: rgb(48, 209, 88);
+        }
+
+        .hoursstyle {
+            font-size: 50px;
+            font-weight: 550;
+            color: rgb(255, 69, 59);
+            text-align: center;
+            margin-top: 30px;
+        }
+
+
+
+        .boxtext3 {
+            font-size: 18px;
+            font-weight: 200;
+            flex-wrap: wrap;
+            margin-top: 20px;
+        }
+
+        .authordata {
+            font-family: Arial;
+            font-size: 30px;
+            font-weight: 600;
+            margin-top: 10px;
+            margin-bottom: 40px;
+            color: rgb(0, 140, 255);
+        }
+
+        .likebutton {
+            background-color: rgb(48, 209, 88);
+            padding: 5px;
+            border-radius: 12px;
+            border-color: rgb(48, 209, 88);
+            cursor: pointer;
+            color: white;
+            padding: 20px;
+            height: auto;
+            width: 120px;
+        }
+
+        .dislikebutton {
+            background-color: rgb(255, 159, 10);
+            padding: 5px;
+            border-radius: 12px;
+            border-color: rgb(255, 159, 10);
+            cursor: pointer;
+            color: white;
+            padding: 20px;
+            height: auto;
+            width: 120px;
+        }
+
+        .wholetext {
+            border: 2px solid #3d3d3d;
+            font-size: 15px; 
+            font-family: Arial; 
+            font-weight: 400; 
+            color: white;
+            border-radius: 12pt;
+            padding: 20px;
+            margin: 20px;
+            color: white;
+            font-family: Arial;
+            height: 400px;
+            width: 94%;
+            background-color: #3d3d3d;
+            flex-wrap: wrap;
+        }
+
+        .boxdesign {
+            border-radius: 12pt;
+            padding: 20px;
+            margin: 20px;
+            color: white;
+            font-family: Arial;
+            height: auto;
+            width: auto;
+            background-color: #3d3d3d;
+            flex-wrap: wrap;
+        }
+
+        .viewbutton {
+            display: flex;
+            color: white;
+            background-color: rgb(0, 140, 255);
+            font-size: 20px; 
+            border-radius: 6pt;
+            height: 70px;
+            width: 20%;
+            vertical-align: middle;
+            border-color: transparent;
+            cursor: pointer;
+            align-items: flex-end;
+        }
+
+        .submitbutton {
+            background-color: rgb(48, 209, 88);
+            padding: 5px;
+            border-radius: 12px;
+            border-color: rgb(48, 209, 88);
+            cursor: pointer;
+            color: white;
+            padding: 20px;
+            height: auto;
+            width: 120px;
+        }
+
+        .codeinput {
+            background-color: rgb(48, 209, 88);
+            padding: 5px;
+            border-radius: 12px;
+            border-color: rgb(48, 209, 88);
+            cursor: pointer;
+            color: white;
+            padding: 20px;
+            height: auto;
+            width: 120px;
+        }
+
+        .codeinput {
+            background-color: rgb(255, 69, 59);
+            padding: 5px;
+            border-radius: 12px;
+            border-color: rgb(255, 69, 59);
+            cursor: text;
+            color: white;
+            padding: 20px;
+            height: auto;
+            width: 250px;
+            font-size: 20px;
+            margin-right: 10px;
+        }
+
+        ::placeholder {
+            color: rgb(255, 196, 193);
+            opacity: 1; /* Firefox */
+        }
+
+        :-ms-input-placeholder { /* Internet Explorer 10-11 */
+            color: rgb(255, 196, 193);
+        }
+
+        ::-ms-input-placeholder { /* Microsoft Edge */
+            color: rgb(255, 196, 193);
+        }
+
+        .alert {
+            padding: 20px;
+            background-color: #f44336;
+            color: white;
+            border-radius: 10px;
+            width: 400px;
+            text-align: center;
+        }
+
+        .closebtn {
+            margin-left: 15px;
+            color: white;
+            font-weight: bold;
+            float: right;
+            font-size: 22px;
+            line-height: 20px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        .closebtn:hover {
+            color: black;
+        }
+
+        .alertloc {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: flex-start;
+        }
+
+        .textfieldkeywords {
+            height: 300px;
+            width: 98%;
+            background-color: #3d3d3d;
+            border: 2px solid #3d3d3d;
+            color: white;
+            font-family: Arial;
+            font-size: 20px;
+        }
+
+
+
+
+    </style>
+
+    
+    <link rel="shortcut icon" href="{{ url_for('static', filename='learnpediafaviconp.png') }}">
+
+    
+
+    {% with messages = get_flashed_messages() %}
+        {% if messages %}
+            <ul class=flashes>
+            {% for message in messages %}
+            <div class="alertloc">
+                <div class="alert">
+                    <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span> 
+                    <strong>
+                        {{message}}
+                    </strong>
+                </div>
+            </div>
+            {% endfor %}
+            </ul>
+        {% endif %}
+    {% endwith %}
+
+    <title>Post - title</title>
+
+
+
+    <div class="header">
+        <div class="head1">
+            {{title}}
+        </div>
+        <div class="editdeletebutton">
+
+
+
+
+            
+    <form action="{{editurl}}" method="POST">
+        <div style="display: flex; ">
+            <input type="text" id="codeinput" name="codeinput" class="codeinput" placeholder="Your Author Code">
+                    <button type="submit" value="Submit" class="submitbutton">
+                        <span class="material-symbols-outlined">
+                            upgrade
+                        </span>
+                </div>
+            </div>
+        </div>
+
+
+
+
+        {% autoescape false %}
+            <div class="allpage">
+                    {% autoescape false %}
+                        <textarea class="wholetext" id="wholetext" name="wholetext">
+                            {{wholetext}}
+                        </textarea>
+                    {% endautoescape %}
+        {% endautoescape %}
+
+
+
+            <div class="keywordslider">
+                <div class="keywordboxdesign">
+                    <div class="boxtitle">
+                        Keywords
+                            <div class="boxtext2">
+                                <div>
+                                    {% autoescape false %}
+                                        <textarea class="textfieldkeywords" id="kewordsupdate" name="kewordsupdate">
+                                            {{keywords}}
+                                        </textarea>
+                                    {% endautoescape %}
+                                </div>
+                            </div>
+                    </div>
+                </div>
+
+
+                
+            </div>
+            </div>
+
+    </form>
+
+    </body>
+    </html>

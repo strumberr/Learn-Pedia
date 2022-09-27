@@ -1,0 +1,39 @@
+<link rel="stylesheet" type="text/css" href="{{url_for('static', filename='stylespageremove.css')}}" />
+<link rel="shortcut icon" href="{{ url_for('static', filename='learnpediafavicondelete.png') }}">
+
+<body>
+<style>
+    body {
+        background: rgb(29, 29, 29);
+    }
+</style>
+
+<div>
+    <div class="wholepage">
+        <div class="boxdesign">
+            <p class="collegetitle">
+                DANGER ZONE! 
+                Are you going to delete something?
+                <div>
+                    In the input box below, please write down the name of the project you would like to remove, and the project unique code that was sent through email when you created the page. We have provided a list with the names of all of the pages below: 
+                </div>
+                <br>
+                {%for el in pagetitles%}
+                <li class="listbold">
+                    {{el}}
+                </li>
+                {%endfor%}
+            <p>
+            <form action="/home" method="POST">
+                <input type="text" class="inputdelete" id="confirmremove" name="confirmremove" placeholder="Project Name" minlength="5" required>
+                <input type="text" class="inputdelete" id="coderemove" name="coderemove" placeholder="Project Unique Code" minlength="5" required>
+                <button name="collegebutton" value="collegebutton" class="viewbutton">
+                    Are you sure you want to permanently remove this page?!
+                </button>
+            </form>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

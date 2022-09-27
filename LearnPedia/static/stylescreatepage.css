@@ -1,0 +1,332 @@
+.inputtitle {
+    border: 2px solid #5e5e5e;
+    background-color: #5e5e5e;
+    border-radius: 6pt;
+    font-size: 20px; 
+    padding: 10px; 
+    margin-left: 20px;
+    margin-bottom: 10px;
+    margin-right: 20px;
+    font-family: Arial; 
+    font-weight: 400; 
+    height: 20px;
+    width: 95%;
+    color: white;
+}
+
+.title {
+    justify-content: left;
+    display: flex;
+    font-family: Arial;
+    color: white;
+    font-size: 30px; 
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 10px;
+    margin-left: 20px;
+    font-weight: 800;
+}
+
+.wholetexttitle {
+    justify-content: left;
+    display: flex;
+    font-family: Arial;
+    color: white;
+    font-size: 25px; 
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 10px;
+    margin-left: 20px;
+    font-weight: 600;
+    
+}
+
+.wholetext {
+    border: 2px solid #5e5e5e;
+    background-color: #5e5e5e;
+    border-radius: 6pt;
+    font-size: 15px; 
+    padding: 10px; 
+    margin-left: 20px;
+    margin-bottom: 10px;
+    margin-right: 20px;
+    font-family: Arial; 
+    font-weight: 400; 
+    height: 300px;
+    width: 95%;
+    padding: 20px;
+    color: white;
+}
+
+
+
+.keywordstitle {
+    justify-content: left;
+    display: flex;
+    font-family: Arial;
+    color: white;
+    font-size: 25px; 
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 10px;
+    margin-left: 20px;
+    font-weight: 600;
+}
+
+.keywords {
+    border: 2px solid #5e5e5e;
+    background-color: #5e5e5e;
+    border-radius: 6pt;
+    font-size: 15px; 
+    margin-left: 20px;
+    margin-bottom: 10px;
+    margin-right: 20px;
+    font-family: Arial; 
+    font-weight: 400; 
+    height: 400px;
+    width: 400px;
+    padding: 20px;
+    color: white;
+}
+
+
+.submitbutton {
+    padding: 5px;
+    border-radius: 6px;
+    background-color: rgb(255, 59, 48);
+    border-color: rgb(255, 59, 48);
+    cursor: pointer;
+    color: white;
+    padding: 20px;
+    height: auto;
+    width: 200px;
+    float: right;
+    margin-top: 20px;
+
+}
+
+.submitbutton:hover {
+    background-color: rgb(255, 69, 59);
+    border-color: rgb(255, 69, 59);
+}
+
+.keywordandsubmit {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.keywords2 {
+    border: 2px solid #5e5e5e;
+    background-color: #5e5e5e;
+    border-radius: 6pt;
+    font-size: 15px; 
+    padding: 10px; 
+    margin-left: 20px;
+    margin-bottom: 10px;
+    margin-right: 20px;
+    font-family: Arial; 
+    font-weight: 400; 
+    height: 400px;
+    width: 90%;
+    padding: 20px;
+    color: white;
+    flex-wrap: wrap;
+}
+
+
+
+.keywordslider {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: row;
+}
+
+
+.keywordsdiv {
+    width: 100%;
+}
+
+.linksandauthor {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.authorbox {
+    border: 2px solid #5e5e5e;
+    background-color: #5e5e5e;
+    border-radius: 6pt;
+    font-size: 15px; 
+    padding: 10px; 
+    margin-left: 20px;
+    margin-bottom: 10px;
+    margin-right: 20px;
+    font-family: Arial; 
+    font-weight: 400; 
+    height: 400px;
+    width: 100%;
+    padding: 20px;
+    color: white;
+    flex-wrap: wrap;
+}
+
+.authorinputname {
+    background-color: rgb(29, 29, 29);
+    border-radius: 6px;
+    margin-top: 20px;
+    border-width: 2px;
+    border-color: rgb(29, 29, 29);
+    width: 98%;
+    height: 50px;
+    color: white;
+    font-size: 30px;
+    font-family: Arial;
+    padding-left: 15px;
+}
+
+.authorinputcontact {
+    background-color: rgb(29, 29, 29);
+    border-radius: 6px;
+    margin-top: 20px;
+    border-width: 2px;
+    border-color: rgb(29, 29, 29);
+    width: 98%;
+    height: 50px;
+    color: white;
+    font-size: 30px;
+    font-family: Arial;
+    padding-left: 15px;
+
+}
+
+.slidertitle {
+    font-family: Arial;
+    color: white;
+    font-size: 20px; 
+    font-weight: 600;
+}
+
+.slidertitle2 {
+    font-family: Arial;
+    color: white;
+    font-size: 20px; 
+    font-weight: 600;
+    margin-top: 30px;
+}
+
+.slidertitle3 {
+    font-family: Arial;
+    color: white;
+    font-size: 20px; 
+    font-weight: 600;
+    margin-top: 30px;
+}
+
+.sliderhard {
+    cursor:grabbing;
+    width: 50%;
+    width: 400px;
+    height: 50px;
+    
+}
+
+.slidercenter {
+    justify-content: space-evenly;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: rgb(29, 29, 29);
+    border-radius: 6px;
+    margin-top: 20px;
+}
+
+
+::placeholder {
+    color: rgb(170, 170, 170);
+    opacity: 1; /* Firefox */
+  }
+  
+  :-ms-input-placeholder { /* Internet Explorer 10-11 */
+   color: rgb(170, 170, 170);
+  }
+  
+  ::-ms-input-placeholder { /* Microsoft Edge */
+   color: rgb(170, 170, 170);
+  }
+
+.hourssubmit {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+
+}
+
+.hoursbutton {
+    background-color: rgb(29, 29, 29);
+    border-width: 2px;
+    border-color: rgb(29, 29, 29);
+    color: white;
+    height: 100px;
+    font-size: 30px;
+    width: 100px;
+    border-radius: 6px;
+    padding-left: 15px;
+}
+
+body {
+    background: rgb(29, 29, 29);
+}
+
+
+
+.alert {
+    padding: 20px;
+    background-color: #f44336;
+    color: white;
+    border-radius: 10px;
+    width: 400px;
+    text-align: center;
+}
+
+.closebtn {
+    margin-left: 15px;
+    color: white;
+    font-weight: bold;
+    float: right;
+    font-size: 22px;
+    line-height: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.closebtn:hover {
+    color: black;
+}
+
+.alertloc {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+
+.ipromisebtn {
+    background-color:rgb(29, 29, 29); 
+    height: 50px; 
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    margin-top: 15px; 
+    border-radius: 8px; 
+    font-family: Arial; 
+    cursor: pointer;
+}
+
+.ipromisebtn:hover {
+    background-color: rgb(49, 49, 49);
+}

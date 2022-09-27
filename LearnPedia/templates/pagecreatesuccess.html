@@ -1,0 +1,30 @@
+<link rel="stylesheet" type="text/css" href="{{url_for('static', filename='stylespagecreatesuccess.css')}}" />
+<link rel="shortcut icon" href="{{ url_for('static', filename='learnpediafaviconp.png') }}">
+
+<body>
+<style>
+    body {
+        background: rgb(29, 29, 29);
+    }
+</style>
+
+<div>
+    <div class="wholepage">
+        <div class="boxdesign">
+            <p class="collegetitle">
+                Thanks for submitting your fantastic work! 
+                <div>
+                    We have sent a mail to <b class="text-rainbow-animation">{{email}}</b>, you should get an email with an access code that you only have. It will be used to edit and delete your posts. Here below is a button to return home!
+                </div>
+            <p>
+            <a href="home">
+                <button name="collegebutton" value="collegebutton" class="viewbutton">
+                    Return Home!
+                </button>
+            </a>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

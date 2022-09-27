@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<link rel="stylesheet" type="text/css" href="{{url_for('static', filename='stylescreatepage.css')}}" />
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+<link rel="shortcut icon" href="{{ url_for('static', filename='learnpediafaviconadd.png') }}">
+<html>
+<body>
+<title>{{pagetitle}}</title>
+
+
+{% with messages = get_flashed_messages() %}
+    {% if messages %}
+        <ul class=flashes>
+        {% for message in messages %}
+        <div class="alertloc">
+            <div class="alert">
+                <strong>
+                    {{message}}
+                </strong>
+                <div class="ipromisebtn" onclick="this.parentElement.style.display='none';">I promise I won't do it again</div>
+            </div>
+        </div>
+        {% endfor %}
+        </ul>
+    {% endif %}
+{% endwith %}
+
+
+<form action="/pagecreate" method="POST">
+
+    <div>
+        <div class="title">
+            *Short Title (1-4 Words)
+        </div>
+        <input size="100%" class="inputtitle" id="title" name="title" placeholder="Title" maxlength="25" minlength="5" required />
+    </div>
+
+    <div>
+        <div class="wholetexttitle">
+            *Brief Description (10 Words)
+        </div>
+        <input size="100%" class="inputtitle" id="briefdesc" name="briefdesc" placeholder="Brief Description" maxlength="80" minlength="5" required/>
+    </div>
+
+    <div>
+        <div class="wholetexttitle">
+            *Your whole text (No word limit)
+        </div>
+        <textarea class="wholetext" id="wholetext" name="wholetext" rows="4" placeholder="Your whole text - BTW we don't allow swear words!"></textarea>
+    </div>
+
+
+    <div class="keywordslider">
+        <div>
+            <div class="keywordstitle">
+                Keywords in the text (No word limit)
+            </div>
+    
+            <div class="keywordandsubmit">
+                <textarea class="keywords" id="keywords" name="keywords" rows="4" placeholder="
+                -Art
+                -Coding
+                -Coffee
+                -Calvin"></textarea>
+                
+            </div>
+        </div>
+
+        <div class="keywordsdiv">
+            <div class="keywordstitle">
+                Sliders:
+            </div>
+                <div class="keywords2">
+                    <div class="slidertitle">
+                        How challenging was this project?
+                        <br>
+                        <div class="slidercenter">
+                            <div>1</div>
+                            <input type="range" id="hardslider" name="hardslider" min="1" max="10" value="5" class="sliderhard" required oninput="this.nextElementSibling.value = this.value">
+                            <output>5</output>
+                        </div>
+                    </div>
+
+                    <div class="slidertitle2">
+                        How much did you enjoy making it?
+                        <br>
+                        <div class="slidercenter">
+                            <div>1</div>
+                            <input type="range" id="enjoyslider" name="enjoyslider" min="1" max="10" value="5" class="sliderhard" required oninput="this.nextElementSibling.value = this.value">
+                            <output>5</output>
+                        </div>
+                        
+                    </div>
+                    <div class="slidertitle3">
+                        *How many hours did you spend on it?
+                        <div class="hourssubmit">
+                            <input class="hoursbutton" type="number" placeholder="Hours Spent" id="hours" name="hours" min="1" required>
+                        </div>
+                    </div>
+                </div>
+                
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+    <div class="keywordslider">
+        <div>
+            <div class="keywordstitle">
+                Relevant Links: (Separate with "enter")
+            </div>
+
+            <div class="keywordandsubmit">
+                <textarea class="keywords" id="links" name="links" rows="4" placeholder="
+                https://www.apple.com/
+
+                https://www.amazon.com/
+
+                https://www.spacex.com/
+
+                https://www.nasa.gov/"></textarea>
+
+        
+                
+            </div>
+        </div>
+
+        <div class="keywordsdiv">
+            <div class="keywordstitle">
+                *Author Details
+            </div>
+                <div class="keywords2">
+                    <div class="slidertitle">
+                        *Author Name: (just first and/or surname)
+                        <br>
+                        <input type="text" id="authorinputname" name="authorinputname" class="authorinputname" required>
+                    </div>
+                    
+            
+                    <div class="slidertitle2" style="color: rgb(255, 59, 48); font-size: 25px;">
+                        *Author Email: (Make sure it's your email! We will send a unique code that lets you *only edit the post you have created*)
+                        <br>
+                        <input type="text" id="authorinputcontact" name="authorinputcontact" class="authorinputcontact" required>
+                    </div>
+                    <button class="submitbutton" type="submit" value="Submit">
+                        Submit! Remember, after submitting you won't be able to edit this anymore :)
+                    </button>
+                </div>
+                
+        </div>
+    </div>
+</form>
+
+
+</body>
+</html>
